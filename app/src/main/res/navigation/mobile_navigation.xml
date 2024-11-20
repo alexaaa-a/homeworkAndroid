@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.first.homework.HomeActivity"
+        android:label="@string/title_home"
+        tools:layout="@layout/activity_home" />
+
+    <fragment
+        android:id="@+id/navigation_tasklist"
+        android:name="com.first.homework.TaskListActivity"
+        android:label="@string/title_tasklist"
+        tools:layout="@layout/activity_receiveimage" />
+
+    <fragment
+        android:id="@+id/navigation_random"
+        android:name="com.first.homework.RandomActivity"
+        android:label="@string/title_random"
+        tools:layout="@layout/activity_random" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.first.homework.InfoActivity"
+        android:label="@string/title_info"
+        tools:layout="@layout/activity_info" />
+</navigation>

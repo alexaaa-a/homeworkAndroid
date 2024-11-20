@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">homework</string>
+    <string name="title_home">Home</string>
+    <string name="title_tasklist">Task List</string>
+    <string name="title_random">Random Number</string>
+    <string name="title_info"> Information </string>
+    <string name="welcome">Welcome!</string>
+    <string name="open_app">Open App</string>
+    <string name="choose_option">Choose option</string>
+    <string name="random_number">Random number</string>
+    <string name="your_task_list">Your Task List</string>
+    <string name="visit_our_website">Visit our website</string>
+    <string name="receive_image">Receive Image</string>
+    <string name="you_can_generate_a_number">You can generate a number from 0 to 1000</string>
+    <string name="_0">0</string>
+    <string name="generate_number">Generate number</string>
+    <string name="a_picture_will_be_sent_here">A picture will be sent here</string>
+</resources>
