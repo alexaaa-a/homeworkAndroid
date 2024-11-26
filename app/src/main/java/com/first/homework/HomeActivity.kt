@@ -1,25 +1,34 @@
 package com.first.homework
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.replace
+import com.first.homework.HomeFragment.Companion.newInstance
+import com.first.homework.HomeFragment.Companion.TAG
 import com.first.homework.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
 
-    @SuppressLint("QueryPermissionsNeeded")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
         binding = ActivityHomeBinding.inflate(layoutInflater).also {
             setContentView(it.root)
         }
 
-        binding.button1.setOnClickListener {
-            val intent = Intent(this@HomeActivity, InfoActivity::class.java)
-            startActivity(intent)
-        }
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.rv_container, newInstance("WELCOME"), TAG)
+            .commit()
+    }
+
+    fun navigateToFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.rv_container, fragment)
+            .addToBackStack(null)
+            .commit()
     }
 }

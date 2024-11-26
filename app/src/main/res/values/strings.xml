@@ -15,4 +15,12 @@
     <string name="_0">0</string>
     <string name="generate_number">Generate number</string>
     <string name="a_picture_will_be_sent_here">A picture will be sent here</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_action_to_do">Choose action to do</string>
+    <string name="adult_content">18+</string>
+    <string name="welcome_to_the_app">WELCOME TO THE APP</string>
+    <string name="welcome_to_our_app">Welcome to our app!</string>
+    <string name="adult_side">You\'re on the adult side of the app!</string>
+    <string name="kid_side">You\'re on the kid side of the app!</string>
 </resources>
