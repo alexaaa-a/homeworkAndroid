@@ -23,4 +23,7 @@
     <string name="welcome_to_our_app">Welcome to our app!</string>
     <string name="adult_side">You\'re on the adult side of the app!</string>
     <string name="kid_side">You\'re on the kid side of the app!</string>
+    <string name="name">name</string>
+    <string name="quote">quote</string>
+    <string name="do_you">Do you like Gossip Girl? Of course!</string>
 </resources>
