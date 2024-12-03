@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">homework</string>
+    <string name="title_home">Home</string>
+    <string name="title_tasklist">Task List</string>
+    <string name="title_random">Random Number</string>
+    <string name="title_info"> Information </string>
+    <string name="welcome">Welcome!</string>
+    <string name="open_app">Open App</string>
+    <string name="choose_option">Choose option</string>
+    <string name="random_number">Random number</string>
+    <string name="your_task_list">Your Task List</string>
+    <string name="visit_our_website">Visit our website</string>
+    <string name="receive_image">Receive Image</string>
+    <string name="you_can_generate_a_number">You can generate a number from 0 to 1000</string>
+    <string name="_0">0</string>
+    <string name="generate_number">Generate number</string>
+    <string name="a_picture_will_be_sent_here">A picture will be sent here</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_action_to_do">Choose action to do</string>
+    <string name="adult_content">18+</string>
+    <string name="welcome_to_the_app">WELCOME TO THE APP</string>
+    <string name="welcome_to_our_app">Welcome to our app!</string>
+    <string name="adult_side">You\'re on the adult side of the app!</string>
+    <string name="kid_side">You\'re on the kid side of the app!</string>
+    <string name="name">name</string>
+    <string name="quote">quote</string>
+    <string name="do_you">Do you like Gossip Girl? Of course!</string>
+</resources>
