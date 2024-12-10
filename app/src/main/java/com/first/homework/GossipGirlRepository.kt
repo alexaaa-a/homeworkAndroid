@@ -70,4 +70,21 @@ object GossipGirlRepository {
             url = "https://i.pinimg.com/736x/eb/35/5b/eb355b74474a24c5cad9609952d11420.jpg"
         )
     )
+
+    val GGUI: MutableList<GGItem.GGUiModel>
+        get() = gossipG.map {
+            val titleColor = if (it.id % 2 != 0) {
+                R.color.pink
+            }
+            else {R.color.light_purple}
+
+            GGItem.GGUiModel(
+                id = it.id,
+                character = it.character,
+                quote = it.quote,
+                url = it.url,
+                isFav = it.isFav,
+                titleColor = titleColor
+            )
+        }.toMutableList()
 }
