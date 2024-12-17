@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".ChooseFragment">
+
+    <TextView
+        android:id="@+id/choose_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/which_cat_are_you_today"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/cutie"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/cutie"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:id="@+id/btn_cutie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_m_a_cute_cat"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="110dp" />
+
+    <ImageView
+        android:id="@+id/chill"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/chill"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="280dp" />
+
+    <Button
+        android:id="@+id/btn_chill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_m_a_chill_cat"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        android:layout_marginTop="430dp"
+        android:layout_marginStart="105dp" />
+
+    <ImageView
+        android:id="@+id/angry"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/angry"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="490dp" />
+
+    <Button
+        android:id="@+id/btn_angry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_am_an_angry_cat"
+        android:textColor="@color/pink"
+        android:textSize="20sp"
+        android:layout_marginTop="640dp"
+        android:layout_marginStart="95dp" />
+
+
+</FrameLayout>

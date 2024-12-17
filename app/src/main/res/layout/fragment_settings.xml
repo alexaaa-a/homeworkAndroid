@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_yellow"
+    tools:context=".SettingsFragment">
+
+    <ImageView
+        android:id="@+id/settings_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:src="@drawable/cat_onboarding"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/settings_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sett"
+        android:textSize="37sp"
+        android:textColor="@color/orange"
+        android:layout_marginTop="510dp"
+        android:textAlignment="center"/>
+
+</FrameLayout>

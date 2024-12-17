@@ -2,22 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/profile_nav">
-
-    <include app:graph="@navigation/choose_navigation" />
-
-    <fragment
-        android:id="@+id/profile_nav"
-        android:name="com.first.homework.ProfileFragment"
-        android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
-
-    <fragment
-        android:id="@+id/settings_nav"
-        android:name="com.first.homework.SettingsFragment"
-        android:label="Settings"
-        tools:layout="@layout/fragment_settings" />
+    android:id="@+id/choose_navigation"
+    app:startDestination="@id/choose_nav">
 
     <fragment
         android:id="@+id/choose_nav"
@@ -37,7 +23,8 @@
 
         <action
             android:id="@+id/action_chooseFragment_to_thirdVarFragment"
-            app:destination="@id/thirdVarFragment" />
+            app:destination="@id/thirdVarFragment"
+            app:enterAnim="@android:anim/decelerate_interpolator" />
     </fragment>
 
     <fragment
@@ -83,5 +70,4 @@
         android:name="com.first.homework.SecretFragment"
         android:label="Secret Page"
         tools:layout="@layout/fragment_secret" />
-
 </navigation>

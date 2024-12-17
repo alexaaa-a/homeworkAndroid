@@ -12,4 +12,6 @@
     <color name="light_yellow">#FFF8DC</color>
     <color name="light_purple">#925DC8</color>
     <color name="light_pink">#D7B7C2</color>
+    <color name="profile_color">#FF4F8B</color>
+    <color name="orange">#FF6E41</color>
 </resources>
