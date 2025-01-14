@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">homework</string>
+    <string name="title_home">Home</string>
+    <string name="title_tasklist">Task List</string>
+    <string name="title_random">Random Number</string>
+    <string name="title_info"> Information </string>
+    <string name="welcome">Welcome!</string>
+    <string name="open_app">Open App</string>
+    <string name="choose_option">Choose option</string>
+    <string name="random_number">Random number</string>
+    <string name="your_task_list">Your Task List</string>
+    <string name="visit_our_website">Visit our website</string>
+    <string name="receive_image">Receive Image</string>
+    <string name="you_can_generate_a_number">You can generate a number from 0 to 1000</string>
+    <string name="_0">0</string>
+    <string name="generate_number">Generate number</string>
+    <string name="a_picture_will_be_sent_here">A picture will be sent here</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_action_to_do">Choose action to do</string>
+    <string name="adult_content">18+</string>
+    <string name="welcome_to_the_app">WELCOME TO THE APP</string>
+    <string name="welcome_to_our_app">Welcome to our app!</string>
+    <string name="adult_side">You\'re on the adult side of the app!</string>
+    <string name="kid_side">You\'re on the kid side of the app!</string>
+    <string name="name">name</string>
+    <string name="quote">quote</string>
+    <string name="do_you">Do you like Gossip Girl? Of course!</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="choose">Choose</string>
+    <string name="which_cat_are_you_today">Which cat are you today?</string>
+    <string name="i_m_a_cute_cat">I\'m a cute cat!</string>
+    <string name="i_m_a_chill_cat">I\'m a chill cat!</string>
+    <string name="i_am_an_angry_cat">I\'am an angry cat!</string>
+    <string name="you_re_the_cutest_cat_in_the_world_babe">You\'re the cutest cat in the world, babe!</string>
+    <string name="chillc">You\'re the chillest cat in the world! And secret page is available especially for you ^^</string>
+    <string name="secret_page">secret page</string>
+    <string name="you_re_the_angriest_cat_in_the_world">You\'re the angriest cat in the world!</string>
+    <string name="this_is_you">This is you!</string>
+    <string name="this_is_a_secret_gift_for_you">This is a secret gift for you!</string>
+    <string name="sett">Why did you come in? I\'ve already set it up myself!</string>
+    <string name="set_alarm">Set alarm</string>
+    <string name="the_alarm_is_not_set">The alarm is not set</string>
+    <string name="good_morning">Good morning!</string>
+</resources>
