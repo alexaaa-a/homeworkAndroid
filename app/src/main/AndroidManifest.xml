@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -16,31 +14,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Homework"
+        android:theme="@style/Theme.MyMusicPlayer"
         tools:targetApi="31">
-        <activity
-            android:name=".AlarmActivity"
-            android:exported="true"
-            android:taskAffinity=".AlarmActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".NotifyActivity"
-            android:exported="true"
-            android:taskAffinity=".NotifyActivity" />
-
-        <receiver android:name=".BrReceiver" android:enabled="true" android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
-
-        <receiver android:name=".Alarm" />
+        <service
+            android:name=".MusicPlayer"
+            android:foregroundServiceType="mediaPlayback"
+            android:enabled="true"
+            android:exported="false"/>
     </application>
 
 </manifest>
