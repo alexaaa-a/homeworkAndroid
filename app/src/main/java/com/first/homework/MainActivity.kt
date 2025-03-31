@@ -1,80 +1,29 @@
 package com.first.homework
 
-import android.content.ComponentName
-import android.content.Context
 import android.content.Intent
-import android.content.ServiceConnection
 import android.os.Bundle
-import android.os.IBinder
-import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.first.homework.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
-    private var binding: ActivityMainBinding? = null
-    private var musicPlayer: MusicPlayer? = null
-    private var servBound = false
-
-    private val serviceConnection = object : ServiceConnection {
-        override fun onServiceConnected(p0: ComponentName?, p1: IBinder?) {
-            val binder = p1 as MusicPlayer.MusicBinder
-            musicPlayer = binder.service()
-            servBound = true
-
-            binding?.trackTitle?.text = musicPlayer?.getCurrentTrackName()
-        }
-
-        override fun onServiceDisconnected(p0: ComponentName?) {
-            servBound = false
-            musicPlayer = null
-        }
-    }
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding?.root)
+        setContentView(binding.root)
 
-        val intent = Intent(this, MusicPlayer::class.java)
-        startService(intent)
-        bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
-
-        binding?.playButton?.setOnClickListener {
-            if (servBound) {
-                musicPlayer?.playMusic()
-                binding?.trackTitle?.text = musicPlayer?.getCurrentTrackName()
+        binding.searchButton.setOnClickListener {
+            val city = binding.cityInput.text.toString().trim()
+            if (city.length in 3..50) {
+                val intent = Intent(this, WeatherActivity::class.java).apply {
+                    putExtra("CITY", city)
+                }
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Введите корректное название города (3-50 символов)", Toast.LENGTH_SHORT).show()
             }
         }
-
-        binding?.pauseButton?.setOnClickListener {
-            if (servBound) {
-                musicPlayer?.pauseMusic()
-                binding?.trackTitle?.text = musicPlayer?.getCurrentTrackName()
-            }
-        }
-
-        binding?.nextButton?.setOnClickListener {
-            if (servBound) {
-                musicPlayer?.nextTrack()
-                binding?.trackTitle?.text = musicPlayer?.getCurrentTrackName()
-            }
-        }
-
-        binding?.prevButton?.setOnClickListener {
-            if (servBound) {
-                musicPlayer?.previousTrack()
-                binding?.trackTitle?.text = musicPlayer?.getCurrentTrackName()
-            }
-        }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        if (servBound) {
-            unbindService(serviceConnection)
-            servBound = false
-        }
-        binding = null
     }
 }
