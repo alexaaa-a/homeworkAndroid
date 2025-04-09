@@ -1,4 +1,4 @@
-package com.first.homework
+package com.first.homework.data.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient {
     private const val BASE_URL = "https://api.openweathermap.org/"
 
-    val instance: WeatherApi by lazy {
+    val weatherApi: WeatherApi by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())

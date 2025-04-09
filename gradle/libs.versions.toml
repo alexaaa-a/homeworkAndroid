@@ -3,6 +3,7 @@ agp = "8.5.0"
 converterGsonVersion = "2.9.0"
 githubGlide = "4.15.1"
 glide = "4.16.0"
+hiltAndroidVersion = "2.44"
 koinAndroid = "3.1.2"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
@@ -22,7 +23,9 @@ retrofitVersion = "2.9.0"
 swiperefreshlayout = "1.2.0-alpha01"
 
 [libraries]
+dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidVersion" }
 glide-v4151 = { module = "com.github.bumptech.glide:glide", version.ref = "githubGlide" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroidVersion" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroid" }
 material-v150 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
 androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationFragmentKtx" }

@@ -1,4 +1,4 @@
-package com.first.homework
+package com.first.homework.data.model
 
 data class WeatherResponse(
     val main: Main,
