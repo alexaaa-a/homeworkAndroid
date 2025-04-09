@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MyMusicPlayer" parent="Theme.Material3.DayNight">
+
+        <item name="colorPrimary">#FF0156</item>
+        <item name="colorPrimaryVariant">#FF8FB5</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Фон -->
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:windowBackground">#121212</item>
+
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FF0156</item>
+
+        <item name="android:buttonStyle">@style/MyMusicButton</item>
+    </style>
+
+    <style name="MyMusicButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">#FF0156</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="shapeAppearance">@style/RoundedButton</item>
+    </style>
+
+    <style name="RoundedButton">
+        <item name="cornerSize">50dp</item>
+    </style>
+</resources>
