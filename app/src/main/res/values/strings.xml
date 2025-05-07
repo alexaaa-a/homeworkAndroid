@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">homeworkAndroid</string>
+    <string name="city">Введите город</string>
+    <string name="search">Поиск</string>
+</resources>
